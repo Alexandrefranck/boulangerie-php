@@ -10,8 +10,6 @@ $produits = $query->fetchAll(PDO::FETCH_ASSOC);
 <?=template_header('Home')?>
 
 <div class="content">
-	<h2>Toto</h2>
-
   <!-- Conteneur principal -->
   <div id="mainContainer">
     <div class="form">

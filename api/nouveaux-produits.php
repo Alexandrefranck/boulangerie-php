@@ -3,7 +3,7 @@ header("Content-type: application/json; charset=utf-8");
 require '../functions.php';
 
 
-$pdo->prepare('SELECT produits.* , categorie.type FROM categorie,produits where categorie.id = produits.categorie_id ORDER BY id DESC  ');
+$query = $pdo->prepare("SELECT * FROM produits where date_sortie >= '2023/03/21'");
 $query->execute();
 $produits = $query->fetchAll(PDO::FETCH_ASSOC);
 

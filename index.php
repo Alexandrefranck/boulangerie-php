@@ -23,7 +23,7 @@ $produits = $query->fetchAll(PDO::FETCH_ASSOC);
         </div>
   
 	<div class="content read">
-	    <a href="create_produit" class="create-contact" >Ajouter un produit</a>
+	    <a href="create_produit.php" class="create-contact" >Ajouter un produit</a>
       <div class="container">
   <br>
   <div class="row">
